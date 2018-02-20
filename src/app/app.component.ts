@@ -26,7 +26,18 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
             ]))]), {optional: true})
       ])
     ]),
-    
+    trigger('explainerAnim', [
+      transition('* => *', [
+        query('.col', style({opacity:0, transform:'translateX(-75px)'}),{optional:true}),
+        query('.col', stagger('500ms', [
+          animate('2s ease-in', keyframes([
+            style({opacity:1,transform:'translateX(0px)', offset:0}),
+            style({opacity:0.5,transform:'translateX(0px)', offset:0.3}),
+            style({opacity:0,transform:'translateX(0px)', offset:1})
+          ]))
+        ]))
+      ])
+    ])
     // trigger('explainerAnim', [
     //   transition('* => *', [
     //     query('.col', style({ opacity: 0, transform: 'translateX(-40px)' }), {optional: true}),

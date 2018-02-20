@@ -1,0 +1,7 @@
+.box{
+    height: 100px;
+    width: 300px;
+    /* float: left; */
+    margin: 23px ;
+    box-shadow: 0px 0px 23px 1px lightgrey;
+}
