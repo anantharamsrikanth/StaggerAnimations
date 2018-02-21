@@ -4,7 +4,7 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
 @Component({
   selector: 'app-list-animation',
   templateUrl: './list-animation.component.html',
-  styleUrls: ['./list-animation.component.scss'],
+  styleUrls: ['./list-animation.component.css'],
   animations: [
     trigger('listAnimation', [
       transition('* => *', [
