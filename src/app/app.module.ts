@@ -12,7 +12,7 @@ import { AnimationsComponent } from './animations/animations.component';
   declarations: [
     AppComponent,
     AnimationsComponent,
-    // AnimateComponent
+    // AnimateComponen
   ],
   imports: [
     BrowserModule,
