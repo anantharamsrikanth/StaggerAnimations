@@ -1,8 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 @Component({
   selector: 'app-animations',
   templateUrl: './animations.component.html',
+    template:
+  `<p>
+    Select a title to set on the current HTML document:
+  </p>
+ 
+  <ul>
+    <li><a (click)="setTitle( 'Good morning!' )">Good morning</a>.</li>
+    <li><a (click)="setTitle( 'Good afternoon!' )">Good afternoon</a>.</li>
+    <li><a (click)="setTitle( 'Good evening!' )">Good evening</a>.</li>
+  </ul>
+  `,
   styleUrls: ['./animations.component.css'],
   
   animations:[
@@ -24,7 +36,12 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
 })
 export class AnimationsComponent implements OnInit {
 
-  constructor() { }
+  // constructor() { }
+  public constructor(private titleService: Title ) { }
+
+  public setTitle( newTitle: 'angular') {
+    this.titleService.setTitle( newTitle );
+  }
 
   ngOnInit() {
   }

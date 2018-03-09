@@ -1,8 +1,20 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  // template:
+  // `<p>
+  //   Select a title to set on the current HTML document:
+  // </p>
+ 
+  // <ul>
+  //   <li><a (click)="setTitle( 'Good morning!' )">Good morning</a>.</li>
+  //   <li><a (click)="setTitle( 'Good afternoon!' )">Good afternoon</a>.</li>
+  //   <li><a (click)="setTitle( 'Good evening!' )">Good evening</a>.</li>
+  // </ul>
+  // `,
   styleUrls: ['./app.component.css'],
   
   animations: [
@@ -55,15 +67,24 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
   ],
 })
 export class AppComponent {
-  items = [];
-  constructor(){
-    this.items = ['the first element','defaultlist item','list item2','list item3','the first element','defaultlist item','list item2','list item3'];
-  }
-  pushItem() {
-    this.items.push('Oh yeah that is awesome');
-    console.log(this.items);
-  }
-  removeItem() {
-    this.items.pop();
-  }
+  // public constructor(private titleService: Title ) { }
+
+  // public setTitle( newTitle: 'angular') {
+  //   this.titleService.setTitle( newTitle );
+  // }
 }
+
+
+
+//   items = [];
+//   constructor(){
+//     this.items = ['the first element','defaultlist item','list item2','list item3','the first element','defaultlist item','list item2','list item3'];
+//   }
+//   pushItem() {
+//     this.items.push('Oh yeah that is awesome');
+//     console.log(this.items);
+//   }
+//   removeItem() {
+//     this.items.pop();
+//   }
+// }
