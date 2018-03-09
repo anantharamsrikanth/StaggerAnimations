@@ -26,8 +26,14 @@ const appRoutes: Routes = [
     AppComponent,
     ListAnimationComponent,
     AnimationsComponent,
+
     AboutComponent,
-    // AnimateComponent
+
+    HeaderComponent,
+    ListAnimationComponent
+
+ 
+
   ],
   imports: [
     RouterModule.forRoot(
