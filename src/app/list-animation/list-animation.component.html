@@ -1,11 +1,11 @@
 <div id="container" [@listAnimation]="items.length">
 
   <button (click)="pushItem()">Add item</button> 
-  <button (click)="removeItem()">Remove item</button>
-  <br>
+  <button (click)="remvoeItem()">Remove item</button>
   
- 
-   <button id="list" *ngFor="let item of items"> {{ item }}</button>
+  <div id="list" *ngFor="let item of items">
+    {{ item }}
+  </div>
 
   <div @explainerAnim>
     <div class="col">
@@ -18,13 +18,4 @@
       <p>I think Coursetro is one of the best learning resources online for Angular</p>
     </div>
   <div>
-<<<<<<< HEAD
 </div>
-<!-- comment above code to see animation for below component -->
-
-<app-animations></app-animations>
-=======
-</div> -->
-<app-header></app-header>
-<router-outlet></router-outlet>
->>>>>>> 70093e53ce14a675dd03f9690cb997b1f5cd7556
