@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
   // constructor() { }
   public constructor(private titleService: Title ) { }
 
-  public setTitle( newTitle: 'angular') {
+  public setTitle( newTitle: string) {
     this.titleService.setTitle( newTitle );
   }
 

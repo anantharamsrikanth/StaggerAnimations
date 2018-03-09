@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 @Component({
   selector: 'app-animations',
-  templateUrl: './animations.component.html',
+  // templateUrl: './animations.component.html',
     template:
   `<p>
     Select a title to set on the current HTML document:
@@ -39,7 +39,7 @@ export class AnimationsComponent implements OnInit {
   // constructor() { }
   public constructor(private titleService: Title ) { }
 
-  public setTitle( newTitle: 'angular') {
+  public setTitle( newTitle: string) {
     this.titleService.setTitle( newTitle );
   }
 
