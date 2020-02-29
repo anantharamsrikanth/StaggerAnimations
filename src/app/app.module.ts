@@ -14,7 +14,7 @@ const appRoutes: Routes = [
   { path: 'home', component: AnimationsComponent },
   { path: 'about', component: AboutComponent }
  
-  // { path: '',
+  // { path: ''
   //   redirectTo: '/home',
   //   pathMatch: 'full'
   // }
